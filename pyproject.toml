@@ -1,0 +1,21 @@
+[project]
+name = "OrbitSim"
+version = "1.0.0"
+requires-python = ">= 3.10"
+description = "Interactive N-body gravity simulator made with pygame"
+readme = "README.md"
+license = {file = "LICENSE"}
+dependencies = [
+    "numpy==1.26.4",
+    "pygame==2.5.2",
+]
+
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "pytest",
+]
