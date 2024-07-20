@@ -1,4 +1,4 @@
-# Gravity Simulator
+# OrbitSim
 Interactive Newtonian N-body gravity simulator accelerated with C library.
 
 <img src="./examples/grav_sim.png" alt="Image" width="400">
@@ -124,7 +124,7 @@ Embedded RK methods are adaptive methods that decides the step size automaticall
 | Runge–Kutta–Fehlberg 7(8) | 1e-4 to 1e-8 |
 
 ### IAS15
-IAS15 (Implicit integrator with Adaptive time Stepping, 15th order) [1] is a highly optimized and efficient integrator. It is the default method of the plotting module.
+IAS15 (Implicit integrator with Adaptive time Stepping, 15th order) [1] is a highly optimized and efficient integrator.
 
 Recommended tolerance*: 1e-9
 
