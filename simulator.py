@@ -92,20 +92,15 @@ class Simulator:
                         self.settings.min_iteration,
                     )
 
-        if self.is_c_lib == True:
-            try:
-                self.stats.total_energy = self.c_lib.compute_energy(
-                    ctypes.c_int(self.stats.objects_count),
-                    self.x.ctypes.data_as(ctypes.POINTER(ctypes.c_double)),
-                    self.v.ctypes.data_as(ctypes.POINTER(ctypes.c_double)),
-                    self.m.ctypes.data_as(ctypes.POINTER(ctypes.c_double)),
-                    ctypes.c_double(Grav_obj.G),
-                )
-            except:
-                self.stats.total_energy = compute_energy(
-                    self.stats.objects_count, self.x, self.v, self.m, Grav_obj.G
-                )
-        elif self.is_c_lib == False:
+        if self.is_c_lib:
+            self.stats.total_energy = self.c_lib.compute_energy(
+                ctypes.c_int(self.stats.objects_count),
+                self.x.ctypes.data_as(ctypes.POINTER(ctypes.c_double)),
+                self.v.ctypes.data_as(ctypes.POINTER(ctypes.c_double)),
+                self.m.ctypes.data_as(ctypes.POINTER(ctypes.c_double)),
+                ctypes.c_double(Grav_obj.G),
+            )
+        else:
             self.stats.total_energy = compute_energy(
                 self.stats.objects_count, self.x, self.v, self.m, Grav_obj.G
             )
