@@ -4,7 +4,7 @@ Interactive Newtonian N-body gravity simulator accelerated with C library.
 <img src="./examples/grav_sim.png" alt="Image" width="400">
 
 ## Online demo: 
-Link: https://alvinng4.github.io/Gravity_Simulator_Web/
+Link: https://alvinng4.github.io/orbit_simulator_Web/
 
 Click *once* after you see the green loading bar showing
 "Ready to start!". You should then see the main
@@ -46,7 +46,7 @@ This program requires Python version 3.10 or higher.
 ### Installation
 Download the source files, or clone this repository by running the following command in terminal:
 ```
-git clone https://github.com/alvinng4/orbit_sim
+git clone https://github.com/alvinng4/OrbitSim
 ```
 Install the required packages by
 ```
@@ -56,20 +56,20 @@ pip install .
 ## Running the program
 Once you have downloaded the source files, navigate to the source directory in terminal and run
 ```
-python gravity_sim [-n|--numpy] [-r|--resolution <width> <height>]
+python orbit_sim [-n|--numpy] [-r|--resolution <width> <height>]
 ```
 
 ### C library / Numpy (Optional)
 By default, the simulation is performed in C to improve performance.
 If you want to use numpy, run the program with
 ```
-python gravity_sim [-n|--numpy]
+python orbit_sim [-n|--numpy]
 ```
 
 ### Changing the resolution (Optional)
 The default resolution is set to the user's screen size. However, you can set your own resolution by the following command:
 ```
-python3 gravity_sim [-r|--resolution <width> <height>]
+python3 orbit_sim [-r|--resolution <width> <height>]
 ```
 
 ## Available systems
