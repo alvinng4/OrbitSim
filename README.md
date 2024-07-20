@@ -18,6 +18,11 @@ This online demo is built with the pygbag package.
 > the FPS would drops significantly. To fix it, simply click
 > on something else outside the game window.
 
+## Gravity Simulator
+Check out my other gravity simulator, with higher accuracy and
+ability to create 3D animated plots: https://github.com/alvinng4/Gravity-Simulator
+
+<img src="./examples/solar_plus_3d.gif" alt="Image" width="400">
 
 ## Documentation
 * [Quick Start](#quick-start)
