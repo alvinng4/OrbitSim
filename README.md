@@ -4,7 +4,7 @@ Interactive Newtonian N-body gravity simulator accelerated with C library.
 <img src="./examples/grav_sim.png" alt="Image" width="400">
 
 ## Online demo: 
-Link: https://alvinng4.github.io/orbit_simulator_Web/
+Link: https://alvinng4.github.io/Gravity_Simulator_Web/
 
 Click *once* after you see the green loading bar showing
 "Ready to start!". You should then see the main
@@ -18,9 +18,9 @@ This online demo is built with the pygbag package.
 > the FPS would drops significantly. To fix it, simply click
 > on something else outside the game window.
 
-## Gravity Simulator
-Check out my other gravity simulator, with higher accuracy and
-ability to create 3D animated plots: https://github.com/alvinng4/Gravity-Simulator
+## grav_sim
+Check out my gravity simulation grav_sim
+https://github.com/alvinng4/grav_sim
 
 <img src="./examples/solar_plus_3d.gif" alt="Image" width="400">
 
